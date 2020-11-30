@@ -1,25 +1,32 @@
 .search-user {
-  border: 2px solid red;
-  margin: 0 auto;
+  margin: 2% auto;
   text-align: center;
 }
 
-.results-div {
-  border: 2px solid blue;
-  justify-content: center;
-  margin: 5% auto;
+.search-user input {
   width: 50%;
+  padding: 0.5em;
+  font-size: 15px;
+}
+
+.results-div {
+  border: 2px solid #000000;
+  color: black;
+  border-radius: 10%;
+  justify-content: center;
+  margin: 2% auto;
+  width: 30%;
   height: 50%;
 }
 
-.results-div button {
-  background: #222;
+.search-user button , .results-div button {
+  background: transparent;
+  color: black;
+  border: 2px solid black;
   margin: 1em auto;
   height: 40px;
   min-width: 120px;
-  border: none;
   border-radius: 10px;
-  color: #eee;
   font-size: 15px;
   position: relative;
   transition: 0.2s;
@@ -34,6 +41,7 @@
 
 #btn:hover {
   background: rgba(2, 104, 95, 0.8);
+  color: white;
 }
 
 #btn:hover #circle {
@@ -45,7 +53,8 @@
 }
 
 .results-div img {
-  border: 2px solid purple;
+  border: 4px solid rgba(2, 104, 95, 0.8);
+  border-radius: 50%;
   max-width: 100%;
   height: 10em;
   transition: 0.2s;

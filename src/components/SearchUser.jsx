@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios';
 import {Link} from 'react-router-dom';
+import { FaGithubAlt} from 'react-icons/fa';
 import './styles/SearchUser.css'
 
 export class SearchUser extends Component {
@@ -25,6 +26,7 @@ export class SearchUser extends Component {
           users: res.data,
         };
         this.setState(data) 
+        console.log(data)
         this.setState({showResults: true})
         this.setState({query: ''})
       })
@@ -36,14 +38,14 @@ export class SearchUser extends Component {
   render() {
     return (
       <div className='search-user'>
-      <h3>Search for a user</h3>
+      <h3><FaGithubAlt /> Github User Search</h3>
       <form onSubmit={this.handleSubmit}>
         <input 
         placeholder='Search for a user'
         value={this.state.query}
         onChange={this.handleChange}
         />
-        <button disabled={!this.state.query || /^\s/.test(this.state.query) } onClick={this.handleSubmit}>Search</button>
+        <p><button id='btn' disabled={!this.state.query || /^\s/.test(this.state.query) } onClick={this.handleSubmit}>Search</button></p>
       </form>
       {this.state.showResults &&
         <div>
