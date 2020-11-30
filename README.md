@@ -9,6 +9,7 @@ It will consist of a simple search page and a user profile page with the option 
 ### Create-react-app.
 ### React-router-dom.
 ### React icons.
+### React testing library.
 
 ## Instructions to run the project
 
