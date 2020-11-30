@@ -9,6 +9,12 @@
   margin: 2% auto;
 }
 
+@media only screen and (max-width: 600px) {
+  .user-profile {
+    width: 80%;
+  }
+}
+
 
 .user-profile img {
   margin: 1em;

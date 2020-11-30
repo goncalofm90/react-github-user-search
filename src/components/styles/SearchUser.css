@@ -19,6 +19,12 @@
   height: 50%;
 }
 
+@media only screen and (max-width: 600px) {
+  .results-div {
+    width: 60%;
+  }
+}
+
 .search-user button , .results-div button {
   background: transparent;
   color: black;

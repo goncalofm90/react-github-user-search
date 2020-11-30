@@ -2,7 +2,7 @@ import React from 'react'
 
 function Home() {
   return (
-    <div style={{width:'50%' , margin:'0 auto',textAlign: 'center'}}>
+    <div style={{margin:'0 auto',textAlign: 'center'}}>
       <h1>Hello!</h1>
       <img 
       style={{padding:'2em',width:'200px' ,height:'200px', borderRadius: '60%', border:'5px solid black'}}
