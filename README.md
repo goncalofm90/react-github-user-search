@@ -5,7 +5,7 @@ the Github API.
 
 It will consist of a simple search page and a user profile page with the option to check the users repos.
 
-## Packages used:
+## Packages used
 ### Create-react-app.
 ### React-router-dom.
 ### React icons.
