@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios';
 import {Link} from 'react-router-dom';
-
+import './styles/SearchUser.css'
 
 export class SearchUser extends Component {
   constructor(props){
@@ -35,7 +35,7 @@ export class SearchUser extends Component {
 
   render() {
     return (
-      <div>
+      <div className='search-user'>
       <h3>Search for a user</h3>
       <form onSubmit={this.handleSubmit}>
         <input 
@@ -51,10 +51,10 @@ export class SearchUser extends Component {
         <h1>There are no users with that name.</h1>
            }
          {this.state.users.items.map((user,i) => (
-           <div key={this.state.users.items[i].id}style={{margin:'5% auto',border: '2px solid black', width:'20%'}}>
+           <div className='results-div' key={this.state.users.items[i].id}>
           <p>{user.login}</p>
-          <img style={{width:'150px', height: '150px'}} src={user.avatar_url}alt='avatar'/>
-          <Link to={`/user/${this.state.users.items[i].login}`}><button>View Profile</button></Link>
+          <img src={user.avatar_url}alt='avatar'/>
+          <Link style={{textDecoration: 'none'}} to={`/user/${this.state.users.items[i].login}`}><button id='btn'>View Profile</button></Link>
           </div>
         ))}
       </div>

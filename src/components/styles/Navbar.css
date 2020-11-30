@@ -1,0 +1,36 @@
+.navbar {
+  background-color: rgba(27, 26, 26, 0.95);
+  margin: 0 auto;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  justify-content: flex-start;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+}
+
+
+.navbar img{
+  border-radius: 50%;
+  border: 3px solid black;
+  margin: 1%;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+}
+
+.navbar a{ 
+  color: white;
+  text-decoration: none;
+  float: right;
+  padding: 0 2em;
+  justify-content: flex-end;
+}
+
+.home-link {
+  margin-left: auto;
+}
