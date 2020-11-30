@@ -7,7 +7,7 @@ It will consist of a simple search page and a user profile page with the option 
 
 ## Packages used:
 ### Create-react-app.
-### React router dom.
+### React-router-dom.
 ### React icons.
 
 ## Instructions to run the project
